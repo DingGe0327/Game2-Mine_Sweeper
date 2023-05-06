@@ -10,12 +10,28 @@ void menu()
 }
 int main()
 {
-	menu();
+
 	int input = 0;
-	while (1)
+	do
 	{
+	    menu();
+	    printf("请选择—>");
 		scanf("%d", &input);
-	}
+		switch(input)
+		{
+		case 1:
+			//printf("开始游戏\n");
+			//break;
+			game();
+			break;
+		case 0:
+			printf("退出游戏\n");
+			break;
+		default:
+			printf("输入错误，请重新输入\n");
+			break;
+		}
+	} while (input);
 	return 0;
 }
 
