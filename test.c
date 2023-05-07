@@ -1,5 +1,5 @@
 #define  _CRT_SECURE_NO_WARNINGS 1
-//扫雷游戏的测试
+//扫雷游戏的主函数
 #include "game.h"
 void menu()
 {
